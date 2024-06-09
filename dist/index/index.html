@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Iniciar Sesión</title>
+    <link rel="icon" href="http://localhost/resources/image/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        .montecarlos{
+            font-family: "MonteCarlo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .franks{
+            font-family: "Frank Ruhl Libre", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        </style>
+
+
+</head>
+
+<body class=" ">
+<header class="flex flex-col  ">
+
+
+        <div class="flex flex-row justify-evenly gap-96">
+            <div class="flex items-center ">
+            <img src="http://localhost/resources/image/logo_charra.png" class="w-[90px] pr-1 md:w-[60px]">
+            <h1 class="font-['CatchyMager'] text-[18px] md:text-[15px]">La Charrita</h1>
+            </div>
+
+            <div class="flex items-center h-16 bg-white">
+                <div class="flex flex-row gap-2 lg:hidden lg:ml-64 p-4">
+                    <label>Menu</label>
+                    <button class="lg:hidden" id="open-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M3 6h10v2H3V6m0 10h10v2H3v-2m0-5h12v2H3v-2m13-4l-1.42 1.39L18.14 12l-3.56 3.61L16 17l5-5l-5-5Z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden lg:flex flex-row list-none gap-x-8 font-['CatchyMager']">
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/home">Inicio</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/us">Nosotros</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/buy">Tienda</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/charricard">Charricard</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/contact">Contacto</a></li>
+
+                </nav>
+            </div>
+
+            <div class="flex flex-row items-center gap-2 space-x-5">
+                                    <a href="http://localhost/index" class="hidden lg:block font-['CatchyMager'] ">Iniciar Sesión</a>
+                
+                <a class="rounded-xl hover:bg-gray-300" href="/packetprueba">
+                    <i class="fa-solid fa-basket-shopping text-3xl"></i>
+
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    <nav class="bg-white shadow-md lg:hidden fixed top-0 left-0 h-full w-64 transform -translate-x-full transition-transform ease-in-out duration-300"
+        id="sidebar">
+        <div class="flex flex-col h-full">
+            <div class="flex flex-row justify-between bg-[#D8D0BB] text-white py-4 px-6">
+                <span class="text-2xl font-semibold">Menu</span>
+                <button class="text-white focus:outline-none focus:ring" id="close-sidebar">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-start space-y-4 p-4">
+
+                <div class="flex flex-row items-center gap-x-2">
+                    <img src="http://localhost/resources/image/user.svg" class="bg-white rounded-full w-10 h-10">
+                                            <a href="http://localhost/index">Iniciar Sesión</a>
+                                    </div>
+                <hr class="w-max border-1 border-[#D8D0BB]" style="width: -webkit-fill-available">
+                <nav class="flex flex-col gap-y-5 list-none">
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/home">Inicio</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/us">Nosotros</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/buy">Tienda</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/contact">Contacto</a></li>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sidebar = document.getElementById('sidebar');
+        const openSidebar = document.getElementById('open-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+
+        openSidebar.addEventListener('click', function() {
+            sidebar.classList.remove('-translate-x-full');
+        });
+
+        closeSidebar.addEventListener('click', function() {
+            sidebar.classList.add('-translate-x-full');
+        });
+    });
+</script>
+
+<div class="bg-[#F2F2F2] w-screen h-screen flex justify-center items-center " >
+    
+    <div class=" w-[90%] md:w-[70%] h-[80%]  flex">
+
+        <div class=" w-full md:w-[50%] h-[100%] bg-white" >
+
+            
+            <div class="flex flex-col items-center justify-center w-full h-full ">
+
+                <img src="http://localhost/resources/image/logoo.png" alt="Imagen de panes1" class=" md:hidden w-[30%]">
+
+                <h1 class="montecarlos text-7xl pb-16">Bienvenido </h1>
+
+                <form action="http://localhost/iniciar_Sesion" method="POST" class="">
+                    <input type="hidden" name="_token" value="ahEIG5sMhM6mdIl0XizKXDbvbmAU1pVAlQA58PVj" autocomplete="off">                    <div class="flex flex-col pb-6">
+                        <label for="email franks  ">Correo</label>
+                        <div class="flex flex-row">
+                            <i class="fa-solid fa-envelope pr-1  my-auto"></i>
+                            <input id="email" name="email" type="email" required autofocus class="rounded-xl w-full border-2 mr-6">
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col pb-2 ">
+                        <label for="password">Contraseña</label>
+
+                        <div>
+                            <div class="flex flex-row">
+                                <i class="fa-solid fa-lock pr-1 my-auto"></i>
+                                <input id="password" name="password" type="password" class="w-full rounded-xl border-2 pl-2" />
+                                <button type="button" id="togglePassword">
+                                    <i id="toggleIcon" class="fa-solid fa-eye my-auto pl-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pb-12 flex justify-between px-5 " >
+
+                        <div class="flex">
+                            <input class="acceblack" type="checkbox" name="remember" id="remember"  >
+
+                            <label class="form-check-label text-xs pl-1" for="remember" >
+                                Recuérdame
+                            </label>
+
+                        </div>
+
+                        <a href="#" class="text-xs">¿Olvidaste tu contraseña?</a>
+
+                    </div>
+
+                    <div class=" flex flex-col">
+
+                        <button type="submit" class="btn btn-primary bg-[#B39555] rounded-xl py-2 px-24">
+                            Iniciar Sesión
+                        </button>
+
+                        <a href="http://localhost/user/register" class="text-center pt-3 text-sm underline">
+                            ¿No tiene cuenta? Registrese
+                        </a>
+
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+        
+        <div class="w-[50%] h-[100%] bg-[#B39555] md:flex flex-col items-center justify-center hidden  " >
+
+            <img src="http://localhost/resources/image/paneslogin.png" alt="Imagen de panes1" class="w-[90%] h-[50%] -rotate-0">
+            <img src="http://localhost/resources/image/paneslogin.png" alt="Imagen de panes2" class="w-[90%] h-[50%]  scale-x-[-1]">
+            <img src="http://localhost/resources/image/logoo.png" alt="Imagen de panes1" class="absolute scale-75">
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = document.getElementById('togglePassword');
+            const toggleIcon = document.getElementById('toggleIcon');
+            let showPassword = false;
+
+            toggleButton.addEventListener('click', function () {
+                showPassword = !showPassword;
+                if (showPassword) {
+                    passwordInput.type = 'text';
+                    toggleIcon.classList.remove('fa-eye');
+                    toggleIcon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    toggleIcon.classList.remove('fa-eye-slash');
+                    toggleIcon.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>

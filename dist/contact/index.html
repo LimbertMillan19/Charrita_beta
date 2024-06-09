@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <script type="module" src="http://[::1]:5173/@vite/client" data-navigate-track="reload"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" data-navigate-track="reload" />    <link rel="icon" href="http://localhost/resources/image/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="flex flex-col  ">
+
+
+        <div class="flex flex-row justify-evenly gap-96">
+            <div class="flex items-center ">
+            <img src="http://localhost/resources/image/logo_charra.png" class="w-[90px] pr-1 md:w-[60px]">
+            <h1 class="font-['CatchyMager'] text-[18px] md:text-[15px]">La Charrita</h1>
+            </div>
+
+            <div class="flex items-center h-16 bg-white">
+                <div class="flex flex-row gap-2 lg:hidden lg:ml-64 p-4">
+                    <label>Menu</label>
+                    <button class="lg:hidden" id="open-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M3 6h10v2H3V6m0 10h10v2H3v-2m0-5h12v2H3v-2m13-4l-1.42 1.39L18.14 12l-3.56 3.61L16 17l5-5l-5-5Z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden lg:flex flex-row list-none gap-x-8 font-['CatchyMager']">
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/home">Inicio</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/us">Nosotros</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/buy">Tienda</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/charricard">Charricard</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00]" href="http://localhost/contact">Contacto</a></li>
+
+                </nav>
+            </div>
+
+            <div class="flex flex-row items-center gap-2 space-x-5">
+                                    <a href="http://localhost/index" class="hidden lg:block font-['CatchyMager'] ">Iniciar Sesión</a>
+                
+                <a class="rounded-xl hover:bg-gray-300" href="/packetprueba">
+                    <i class="fa-solid fa-basket-shopping text-3xl"></i>
+
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    <nav class="bg-white shadow-md lg:hidden fixed top-0 left-0 h-full w-64 transform -translate-x-full transition-transform ease-in-out duration-300"
+        id="sidebar">
+        <div class="flex flex-col h-full">
+            <div class="flex flex-row justify-between bg-[#D8D0BB] text-white py-4 px-6">
+                <span class="text-2xl font-semibold">Menu</span>
+                <button class="text-white focus:outline-none focus:ring" id="close-sidebar">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-start space-y-4 p-4">
+
+                <div class="flex flex-row items-center gap-x-2">
+                    <img src="http://localhost/resources/image/user.svg" class="bg-white rounded-full w-10 h-10">
+                                            <a href="http://localhost/index">Iniciar Sesión</a>
+                                    </div>
+                <hr class="w-max border-1 border-[#D8D0BB]" style="width: -webkit-fill-available">
+                <nav class="flex flex-col gap-y-5 list-none">
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/home">Inicio</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/us">Nosotros</a></li>
+                    <li><a class="text-black hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/buy">Tienda</a></li>
+                    <li><a class="text-[#ecbd00] hover:text-[#ecbd00] active:text-[#ecbd00]"
+                            href="http://localhost/contact">Contacto</a></li>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sidebar = document.getElementById('sidebar');
+        const openSidebar = document.getElementById('open-sidebar');
+        const closeSidebar = document.getElementById('close-sidebar');
+
+        openSidebar.addEventListener('click', function() {
+            sidebar.classList.remove('-translate-x-full');
+        });
+
+        closeSidebar.addEventListener('click', function() {
+            sidebar.classList.add('-translate-x-full');
+        });
+    });
+</script>
+
+    <div id="body" class="flex flex-col">
+        <div class="flex flex-col p-6">
+            <div class="flex justify-center">
+                <h1 class="text-[42px]" style="font-family: CM">CONTACTO</h1>
+            </div>
+        </div>
+        <section>
+            <div class="flex flex-col lg:flex-row gap-y-2 gap-x-3">
+                <form class="flex flex-col w-full lg:w-1/2 py-6 px-12 sm:px-24 md:px-32 lg:px-40 gap-y-3">
+                    <div class="flex flex-row jus gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <h2 class="font-['CM'] text-[24px]" >Escribe tu mensaje en el siguiente:</h2>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <label class="font-['AppleGaramond'] text-[20px]">Nombre completo<span
+                                    class="text-red-600">*</span></label>
+                            <input type="text"
+                                class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <label class="font-['AppleGaramond'] text-[20px]">Email<span
+                                    class="text-red-600">*</span></label>
+                            <input type="email"
+                                class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <label class="font-['AppleGaramond'] text-[20px]">Telefono<span
+                                    class="text-red-600">*</span></label>
+                            <input type="tel"
+                                class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <label class="font-['AppleGaramond'] text-[20px]">Mensaje</label>
+                            <textarea class="font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1 h-32 rounded-md">
+                                !Quiero más información!
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center gap-x-2">
+                        <div class="flex pt-2">
+                            <button
+                                class="w-[250px] font-['AppleGaramond'] text-sm/[15px] bg-[#B8A22A] hover:bg-[#C8A22F] text-white rounded-[10px] border-none p-[10px]">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex flex-col w-full lg:w-1/2 py-6 px-6 lg:px-24">
+                    <div class="flex flex-row jus gap-x-2">
+                        <div class="flex flex-col w-full">
+                            <h2 class="font-['CatchyMager'] text-[24px]">Puedes visitarnos en nuestra tienda física</h2>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                        <p class="font-['AppleGaramond'] text-[16px]">
+                            Estamos ubicados en eñ municipio de
+                            Muxupip en el estado de Yucatán, la
+                            dirección (dirección).
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14895.053855563141!2d-89.3414870558613!3d21.04214836670813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56817897f8b34f%3A0xef9d0b8bdb65bd0d!2sMuxupip%2C%2097457%20Muxupip%2C%20Yuc.!5e0!3m2!1ses!2smx!4v1700523953777!5m2!1ses!2smx" class="w-full h-auto sm:h-56" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="font-['AppleGaramond'] text-[16px]">
+                            No dude en comunicarse con nosotros
+                            hoy mismo para obtener un
+                            presupuesto, realizar pedidos, solicitar
+                            información u cualquier otro tipo de
+                            consulta. Estaremos encantados de
+                            ayudar y responder a todas sus
+                            preguntas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-[#B39555] py-6 px-2 md:px-32">
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="flex flex-col">
+            <label class="font-['AppleGaramondBold'] text-[20px]">Correo de la panadería: </label>
+            <label class="font-['AppleGaramondBold'] text-[20px]">Ubicacion</label>
+            <label class="font-['AppleGaramondBold'] text-[20px]">Direccion Web</label>
+            <label class="font-['AppleGaramondBold'] text-[20px]">Numero: 9911180072</label>
+        </div>
+        <div></div>
+        <div class="flex flex-row md:justify-center">
+            <div class="flex flex-col">
+                <label class="font-['AppleGaramondBold'] text-[20px] pt-2">Siguenos:</label>
+                <img src="http://localhost/resources/image/MingcuteFacebookFill.png" class="w-16 h-16">
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>
