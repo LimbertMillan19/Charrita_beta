@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ChickensLovers';
+    src: url("{{ asset('resources/font/ChickensLovers.ttf') }}") format('truetype');
+    /* Otras propiedades opcionales para especificar el estilo y la variación de la fuente */
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AppleGaramond';
+    src: url("{{ asset('resources/font/AppleGaramond-Light.ttf') }}") format('truetype');
+    /* Otras propiedades opcionales para especificar el estilo y la variación de la fuente */
+    font-weight: lighter;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AppleGaramondBold';
+    src: url("{{ asset('resources/font/AppleGaramond-Bold.ttf') }}") format('truetype');
+    /* Otras propiedades opcionales para especificar el estilo y la variación de la fuente */
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CM';
+    src: url("{{ asset('resources/font/CatchyMagerRegular.ttf') }}") format('truetype');
+    /* Otras propiedades opcionales para especificar el estilo y la variación de la fuente */
+    font-weight: bold;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'MonteCarlo';
+    src: url("{{ asset('resources/font/MonteCarlo-Regular.ttf') }}") format('truetype');
+    /* Otras propiedades opcionales para especificar el estilo y la variación de la fuente */
+    font-weight: 400;
+    font-style: normal;
+}
