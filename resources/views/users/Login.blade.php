@@ -42,7 +42,7 @@
             {{--                Div del form--}}
             <div class="flex flex-col items-center justify-center w-full h-full ">
 
-                <img src="{{ asset('resources/image/logoo.png') }}" alt="Imagen de panes1" class=" md:hidden w-[30%]">
+                <img src="{{ asset('resources/image/charrita.png') }}" alt="Imagen de panes1" class=" md:hidden w-[30%]">
 
                 <h1 class="montecarlos text-7xl pb-16">Bienvenido </h1>
 
@@ -116,7 +116,7 @@
 
             <img src="{{ asset('resources/image/paneslogin.png') }}" alt="Imagen de panes1" class="w-[90%] h-[50%] -rotate-0">
             <img src="{{ asset('resources/image/paneslogin.png') }}" alt="Imagen de panes2" class="w-[90%] h-[50%]  scale-x-[-1]">
-            <img src="{{ asset('resources/image/logoo.png') }}" alt="Imagen de panes1" class="absolute scale-75">
+            <img src="{{ asset('resources/image/charrita.png') }}" alt="Imagen de panes1" class="absolute scale-50">
 
         </div>
 
@@ -125,55 +125,7 @@
 
     </div>
 </div>
-{{--    <!-- Panel-->--}}
-{{--    <div class="border-2 border-[#B39555] w-full rounded-tl-lg rounded-br-lg">--}}
-{{--        <!-- Header-->--}}
-{{--        <div class="grid h-16 md:h-20 bg-[#B39555] rounded-tl-md w-full ">--}}
-{{--            <img src="{{ asset('resources/image/logo.png') }}"--}}
-{{--                class="radius-b justify-self-center absolute w-[150px] -mt-[80px] md:-mt-[65px]">--}}
-{{--        </div>--}}
-{{--        <!-- Body-->--}}
-{{--        <div class="w-full">--}}
-{{--            <form action="{{route('iniciar_Sesion')}}" method="POST" class="w-full">--}}
-{{--                @csrf--}}
-{{--                <div class="w-full flex flex-col gap-y-3 pt-5 pb-3">--}}
-{{--                    <div class="w-full flex flex-col gap-y-3 px-2 md:px-[15%] lg:px-[25%]">--}}
-{{--                        <div>--}}
-{{--                            <h2 class="text-[24px] w-full text-center"> Inicio de sesión </h2>--}}
-{{--                        </div>--}}
-{{--    --}}
-{{--                        <div class="flex flex-col gap-y-1 pr-6">--}}
-{{--                            <label for="">Correo electrónico</label>--}}
-{{--                            <input name="email" type="email" class="w-full border-2 border-[#D8D0BB] px-2 py-1 rounded-md">--}}
-{{--                        </div>--}}
-{{--    --}}
-{{--                        <div class="flex flex-col gap-y-1">--}}
-{{--                            <label for=""> Contraseña</label>--}}
-{{--                            <div class="w-full flex flex-row gap-x-1">--}}
-{{--                                <input id="password" name="password" type="password" class="w-full border-2 border-[#D8D0BB] px-2 py-1 rounded-md">--}}
-{{--    --}}
-{{--                                <img src="{{ asset('resources/image/MdiEye.png') }}" onclick="togglePasswordVisibility()" alt="Mostrar contraseña"--}}
-{{--                                    class="object-contain w-6 h-8 cursor-pointer">--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--    --}}
-{{--                    <div class="w-full flex flex-col items-center gap-y-3 px-2 md:px-[15%] lg:px-[25%]">--}}
-{{--                        <div class="flex flex-col gap-y-1 w-full px-2">--}}
-{{--                            <button--}}
-{{--                                type="submit"--}}
-{{--                                class="w-full font-['AppleGaramond'] text-[15px] bg-[#ecbd00] hover:bg-[#CC9B1C] hover:text-white rounded-[10px] border-none p-[10px]">Iniciar--}}
-{{--                                sesión</button>--}}
-{{--                            <a href="{{route('register_user')}}"><button--}}
-{{--                                type="button"--}}
-{{--                                class="w-full font-['AppleGaramond'] text-[15px] bg-[#B8A22A] hover:bg-[#C8A22F] text-white rounded-[10px] border-none p-[10px]">Registrarse</button>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </form>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const passwordInput = document.getElementById('password');

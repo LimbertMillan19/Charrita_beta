@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=MonteCarlo&display=swap" rel="stylesheet">
 
+
     <style>
         .montecarlos{
             font-family: "MonteCarlo", cursive;
@@ -55,7 +56,7 @@
         <h1 class="frank text-white text-[18px] md:text-[48px] text-center">Tramite su Charricard</h1><br>
         <h2 class="frank text-white text-[18px] md:text-[18px] text-center">Obtenga su tarjeta de puntos "Charricard" y acceda a descuentos exclusivos y ofertas especiales en nuestra tienda. Además, podrá acumular puntos por cada compra y canjearlos por recompensas exclusivas.</h2>
         <br>
-        <button class="text-[14px] md:text-[12px] w-2/3 md:w-1/3 text-center rounded-full border border-white px-4 py-2 mt-4 items-center text-white hover:bg-[#CC9B1C] frank">Ver Beneficios</button>
+        <a href="/charricard" class="text-[14px] md:text-[12px] w-2/3 md:w-1/3 text-center rounded-full border border-white px-10 py-4 mt-4 items-center text-white hover:bg-[#CC9B1C] frank text-xl">Ver Beneficios</a>
     </div>
 
     <img src="{{ asset('resources/image/canastapan.png') }}" class="relative scale-x-100 md:scale-x-150 scale-y-100 md:scale-y-[1.5] translate-x-0 md:translate-x-60 translate-y-0 md:translate-y-5">

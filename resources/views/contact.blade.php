@@ -8,6 +8,26 @@
     <title>Contacto</title>
     @vite('resources/css/app.css')
     <link rel="icon" href="{{ asset('resources/image/logo.png') }}" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        .montecarlos{
+            font-family: "MonteCarlo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .franks{
+            font-family: "Frank Ruhl Libre", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +36,7 @@
     <div id="body" class="flex flex-col">
         <div class="flex flex-col p-6">
             <div class="flex justify-center">
-                <h1 class="text-[42px]" style="font-family: CM">CONTACTO</h1>
+                <h1 class="text-[42px] montecarlos text-2xl" >Contacto</h1>
             </div>
         </div>
         <section>
@@ -24,12 +44,12 @@
                 <form class="flex flex-col w-full lg:w-1/2 py-6 px-12 sm:px-24 md:px-32 lg:px-40 gap-y-3">
                     <div class="flex flex-row jus gap-x-2">
                         <div class="flex flex-col w-full">
-                            <h2 class="font-['CM'] text-[24px]" >Escribe tu mensaje en el siguiente:</h2>
+                            <h2 class="montecarlos text-3xl" >Escribe tu mensaje en el siguiente espacio:</h2>
                         </div>
                     </div>
                     <div class="flex flex-row gap-x-2">
                         <div class="flex flex-col w-full">
-                            <label class="font-['AppleGaramond'] text-[20px]">Nombre completo<span
+                            <label class="franks text-md">Nombre completo<span
                                     class="text-red-600">*</span></label>
                             <input type="text"
                                 class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
@@ -37,15 +57,15 @@
                     </div>
                     <div class="flex flex-row gap-x-2">
                         <div class="flex flex-col w-full">
-                            <label class="font-['AppleGaramond'] text-[20px]">Email<span
+                            <label class="franks text-md">Email<span
                                     class="text-red-600">*</span></label>
                             <input type="email"
-                                class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
+                                class="franks text-md text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
                         </div>
                     </div>
                     <div class="flex flex-row gap-x-2">
                         <div class="flex flex-col w-full">
-                            <label class="font-['AppleGaramond'] text-[20px]">Telefono<span
+                            <label class="franks text-md">Telefóno<span
                                     class="text-red-600">*</span></label>
                             <input type="tel"
                                 class="w-full font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1  rounded-md">
@@ -53,7 +73,7 @@
                     </div>
                     <div class="flex flex-row gap-x-2">
                         <div class="flex flex-col w-full">
-                            <label class="font-['AppleGaramond'] text-[20px]">Mensaje</label>
+                            <label class="franks text-md">Mensaje</label>
                             <textarea class="font-['AppleGaramond'] text-[16px] border-2 border-[#D8D0BB] px-2 py-1 h-32 rounded-md">
                                 !Quiero más información!
                             </textarea>
@@ -62,16 +82,18 @@
                     <div class="flex flex-row justify-center gap-x-2">
                         <div class="flex pt-2">
                             <button
-                                class="w-[250px] font-['AppleGaramond'] text-sm/[15px] bg-[#B8A22A] hover:bg-[#C8A22F] text-white rounded-[10px] border-none p-[10px]">Enviar</button>
+                                class="w-[250px] font-['AppleGaramond'] text-sm/[15px] bg-[#B39555]  py-2 px-24  text-white rounded-[10px] border-none p-[10px]">Enviar</button>
                         </div>
                     </div>
                 </form>
                 <div class="flex flex-col w-full lg:w-1/2 py-6 px-6 lg:px-24">
                     <div class="flex flex-row jus gap-x-2">
                         <div class="flex flex-col w-full">
-                            <h2 class="font-['CatchyMager'] text-[24px]">Puedes visitarnos en nuestra tienda física</h2>
+                            <h2 class="montecarlos text-3xl py-2">Puedes visitarnos en nuestra tienda física</h2>
                         </div>
                     </div>
+
+
                     <div class="flex flex-col gap-y-2">
                         <p class="font-['AppleGaramond'] text-[16px]">
                             Estamos ubicados en eñ municipio de

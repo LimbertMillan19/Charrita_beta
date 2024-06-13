@@ -99,7 +99,6 @@
                     <img class="w-[30%]" src="{{asset('resources/charra/mirada_baja.png')}}" alt="">
                     <p class="franks" >La panadería “La Charrita” es un negocio familiar que se estableció en el año de 2022, con el propósito de ofrecer pan tanto a particulares como a mayoristas. Está ubicada en Muxupip, Yucatán, y recientemente ha lanzado una página web que lleva el mismo nombre “La Charrita” para mejorar  en ventas y tener presencia en internet. “La Charrita” siempre se ha enfocado en satisfacer las necesidades de sus clientes, garantizando la máxima calidad en sus productos y servicios. Su deseo es brindar a los clientes una experiencia de compra y un servicio de envío rápido, agradable y acogedor además de abarcar a todos los clientes posibles una experiencia y beneficio que da la panadería por igual. </p>
                 </div>
-
             </div>
         </div>
 

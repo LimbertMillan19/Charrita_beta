@@ -83,7 +83,7 @@
                 @endforeach
 
                 <div class="absolute top-1/2 left-1/2 transform translate-x-8 -translate-y-32 flex flex-col items-center">
-                    <img class="w-36 h-30 mb-4 translate-y-6 translate-x-4" src="{{asset('resources/image/charricard.jpeg')}}" alt="logo">
+                    <img class="w-36 h-30 mb-4 translate-y-6 translate-x-4" src="{{asset('resources/image/globo_charra.png')}}" alt="logo">
                     <img class="w-40 h-40  mb-4" src="{{asset('resources/image/guiño.png')}}" alt="logo">
                 </div>
             </div>

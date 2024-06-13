@@ -148,7 +148,7 @@ class ParaMi extends Component
         $this->modal = false;
         $this->reset(['nombres', 'apellidos', 'telefono', 'correo']);
         $this->checkIfRegistered(); // Recheck after registration
-        $this->redirect('/');
+        $this->redirect('/charricard');
     }
 
     private function generateUniqueTarjetaNumber()

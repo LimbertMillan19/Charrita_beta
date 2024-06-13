@@ -111,6 +111,8 @@
                     <li><a class="{{ Route::currentRouteName() == 'buy' ? 'text-[#ecbd00]' : 'text-black' }} hover:text-[#ecbd00] active:text-[#ecbd00]"
                             href="{{ route('buy') }}">Tienda</a></li>
                     <li><a class="{{ Route::currentRouteName() == 'contact' ? 'text-[#ecbd00]' : 'text-black' }} hover:text-[#ecbd00] active:text-[#ecbd00]"
+                           href="{{ route('charri') }}">Charricard</a></li>
+                    <li><a class="{{ Route::currentRouteName() == 'contact' ? 'text-[#ecbd00]' : 'text-black' }} hover:text-[#ecbd00] active:text-[#ecbd00]"
                             href="{{ route('contact') }}">Contacto</a></li>
                 </nav>
             </div>

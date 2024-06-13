@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería - Carrito de Compras</title>
     @vite('resources/css/app.css')
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=MonteCarlo&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        .montecarlos{
+            font-family: "MonteCarlo", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .franks{
+            font-family: "Frank Ruhl Libre", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
-    @include('layouts.HeaderSec')
+    @include('layouts.Header')
 
     <br>
     <div class="border md:border-2 md:border-t-0 md:border-b-0 border-[#D8D0BB] w-full h-full">
-        <h1 class="font-['CatchyMager'] text-center font-bold text-4xl">PEDIDOS</h1>
+        <h1 class="montecarlos text-center font-bold text-6xl pb-10 ">Pedidos</h1>
         <!-- Primer Bloque -->
         <div class="max-w-7xl mx-auto bg-white p-6 border-2 border-[#D8D0BB] rounded-md shadow-md relative">
             <div class="flex flex-row px-2 p-1 justify-between w-full">
@@ -42,7 +62,7 @@
                         </div>
 
                         <!-- Botón para Mostrar Detalles -->
-                        
+
 
                         <!-- Detalles de las Compras (Inicialmente Ocultos) -->
                         <div id="detallesPedido{{$pedido_Apartado->id}}" class="hidden px-4">
@@ -54,7 +74,7 @@
                                     <div class="flex flex-row py-10 border-2 border-[#D8D0BB] justify-between w-full ">
                                         <div class="flex flex-row items-center justify-center w-full">
                                             <div class="flex flex-row py-1 px-2 w-full">
-                                                <img src="{{ asset($infopedido->img . '.jpg') }}"" alt="Imagen del Producto"
+                                                <img src="{{ asset($infopedido->img) }} .jpg" alt="Imagen del Producto"
                                                     class="w-full md:w-full md:h-auto mr-4 rounded-md">
                                             </div>
                                             <div>
@@ -64,7 +84,7 @@
                                                 <p class="font-['CatchyMager'] text-sm">Piezas: {{$infopedido->pan_cantidad}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Precio por pieza: ${{$infopedido->precio}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Cantidad total: ${{$infopedido->pan_total}}</p>
-    
+
                                             </div>
                                         </div>
                                     </div>
@@ -101,7 +121,7 @@
                         <div class="h-max bg-[#D8D0BB] w-full py-4 px-4">
                             <div class="flex flex-row p-1 justify-between w-full">
                                 <div class="flex flex-row items-center justify-center">
-                                    <img src="{{ asset('resources/image/logo.png') }}" alt="Imagen del Producto"
+                                    <img src="{{ asset('resources/image/charrita.png') }}" alt="Imagen del Producto"
                                         class="w-12 h-12 mr-4 rounded-md">
                                     <h1 class="text-xl md:text-2xl font-['AppleGaramondBold'] font-bold">
                                         Folio: {{$pedidos_Pendiente->folio}}
@@ -113,7 +133,7 @@
                         </div>
 
                         <!-- Botón para Mostrar Detalles -->
-                        
+
 
                         <!-- Detalles de las Compras (Inicialmente Ocultos) -->
                         <div id="detallesPedido{{$pedidos_Pendiente->id}}" class="hidden px-4">
@@ -135,7 +155,7 @@
                                                 <p class="font-['CatchyMager'] text-sm">Piezas: {{$infopedido->pan_cantidad}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Precio por pieza: ${{$infopedido->precio}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Cantidad total: ${{$infopedido->pan_total}}</p>
-    
+
                                             </div>
                                         </div>
                                     </div>
@@ -185,7 +205,7 @@
                         </div>
 
                         <!-- Botón para Mostrar Detalles -->
-                        
+
 
                         <!-- Detalles de las Compras (Inicialmente Ocultos) -->
                         <div id="detallesPedido{{$pedidos_Entregado->id}}" class="hidden px-4">
@@ -207,7 +227,7 @@
                                                 <p class="font-['CatchyMager'] text-sm">Piezas: {{$infopedido->pan_cantidad}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Precio por pieza: ${{$infopedido->precio}}</p>
                                                 <p class="font-['CatchyMager'] text-sm">Cantidad total: ${{$infopedido->pan_total}}</p>
-    
+
                                             </div>
                                         </div>
                                     </div>
@@ -226,9 +246,9 @@
             </div>
         </div>
 
-        <div class="px-32 md:px-16 py-5">
-            <a href="{{route('home')}}"><button id=""
-                class="absolute bg-[#B39555]  text-black  w-20 justify-between items-center rounded-md">Inicio</button>
+        <div class="px-32 md:px-16  py-5">
+            <a class="" href="{{route('home')}}"><button id=""
+                class=" bg-[#B39555]  text-black  w-20 justify-between items-center rounded-md">Inicio</button>
             </a>
         </div>
     </div>

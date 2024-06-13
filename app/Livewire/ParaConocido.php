@@ -120,7 +120,7 @@ class ParaConocido extends Component
         $this->modal = false;
         $this->reset(['nombres', 'apellidos', 'telefono', 'correo']);
 
-        return redirect('/');
+        return redirect('/charricard');
     }
 
     private function generateUniqueTarjetaNumber()

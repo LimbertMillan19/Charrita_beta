@@ -44,7 +44,7 @@
 
             <img src="{{ asset('resources/image/paneslogin.png') }}" alt="Imagen de panes1" class="w-[90%] h-[70%] -rotate-0">
 
-            <img src="{{ asset('resources/image/logoo.png') }}" alt="Imagen de panes1" class="absolute scale-75">
+            <img src="{{ asset('resources/image/charrita.png') }}" alt="Imagen de panes1" class="absolute scale-50">
 
         </div>
 

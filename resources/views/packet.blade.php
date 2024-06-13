@@ -8,6 +8,7 @@
     <title>Arma tu paquete</title>
     @vite('resources/css/app.css')
     <link rel="icon" href="{{ asset('resources/image/logo.png') }}" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <style>
@@ -162,7 +163,7 @@
                     if (existingItem) {
                         existingItem.cantidad++;
                     } else {
-                        cartItems.push({ nombre, descripcion, precio, imagen, cantidad: 1 });
+                        cartItems.push({ nombre, descripciAon, precio, imagen, cantidad: 1 });
                     }
                     updateCart();
                     updateCounter();

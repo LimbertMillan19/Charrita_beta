@@ -13,7 +13,16 @@ return new class extends Migration
     {
         Schema::create('tarjetas', function (Blueprint $table) {
             $table->id();
+            $table->string('nombres');
+            $table->string('apellidos');
+            $table->string('telefono');
+            $table->string('correo');
+            $table->string('num_tarjeta');
+            $table->string('num_cliente');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
