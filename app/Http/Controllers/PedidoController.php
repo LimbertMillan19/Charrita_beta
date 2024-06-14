@@ -34,6 +34,36 @@ class PedidoController extends Controller {
         //return view('orders')->with(['error' => 'La cantidad seleccionada supera la cantidad disponible']);
     }
 
+    
+ public function info()
+    {
+        $pedidos=Pedidos::all();
+        dump($pedidos->groupBy('Estado'));
+    }
+
+
+    public function updateEstado($id, Request $request)
+    {
+        // Validar la solicitud
+        $request->validate([
+            'Estado' => 'required|string',
+        ]);
+
+        // Encontrar el pedido por ID
+        $pedido = Pedidos::find($id);
+
+        // Si no se encuentra el pedido, retornar un error 404
+        if (!$pedido) {
+            return response()->json(['error' => 'Pedido no encontrado'], 404);
+        }
+
+        // Actualizar el estado del pedido
+        $pedido->Estado = $request->input('Estado');
+        $pedido->save();
+
+        // Retornar la respuesta exitosa
+        return response()->json(['message' => 'Estado del pedido actualizado', 'pedido' => $pedido], 200);
+    }
     /**
      * Show the form for creating a new resource.
      */
